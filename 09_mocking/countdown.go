@@ -58,7 +58,7 @@ func (s *SpyTime) Sleep(duration time.Duration) {
     s.durationSlept = duration
 }
 
-// Sleep is the mocked implementation
+// Sleep is the implementation for the ConfigurableSleeper
 func (c *ConfigurableSleeper) Sleep() {
 	c.sleep(c.duration)
 }
